@@ -5,7 +5,7 @@ Code for [paper](https://arxiv.org/abs/2301.05226) *Visual Chain-of-Thought Prom
 ## Preprocess datasets
 * Coco dataset 2014 and 2017
 * Download OK-VQA and AOK-VQA dataset, following the [PICa](https://github.com/microsoft/PICa) format
-* Run preprocess script (`preprocess/preprocess_aokvqa.sh` for AOK-VQA and `preprocess/preprocess_okvqa.sh`) for OK-VQA
+* For A-OKVQA, run preprocess script (`preprocess/preprocess_aokvqa.sh` for AOK-VQA). For OK-VQA, you need to modify the script a little to fit its format (A-OKVQA and OK-VQA have similar formats).
 * Make training object similarity file (`object_similarity/object_similarity_aokvqa.sh` for AOK-VQA and `object_similarity/object_similarity_okvqa.sh` for OK-VQA)
 ## Prepare Scene graph and captions
 * Before running experiments, VisualCoT also need scene graph and captions, including three files for each input image (under `input_text/scene_graph_text/scene_graph_coco17`, `input_text/scene_graph_text/scene_graph_coco17_attr`, and `input_text/scene_graph_text/scene_graph_coco17_caption`). We have provided an example of image No.57 under each dir. Please follow the format of the examples and get scene graphs for all other images.
